@@ -11,6 +11,7 @@ var productosController = require('./controllers/productosController');
 var promocionesController = require('./controllers/promocionesController');
 var proveedorController = require('./controllers/proveedorController');
 var usuariosController = require('./controllers/usuariosController');
+var authenticationController = require('./controllers/authenticationController');
 exports.endpoints = [
 	{
 		method: 'GET',
@@ -595,7 +596,7 @@ exports.endpoints = [
 	{
 		method: 'POST',
 		path: '/register',
-		config: usuariosController.createUser
+		config: usuariosController.createUsuario
 	},
 	{method: 'POST',
 	 path: '/login',

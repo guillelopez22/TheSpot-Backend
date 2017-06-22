@@ -3,6 +3,7 @@ var inert = require('inert');
 var mongoose = require('mongoose');
 var routes = require('./routes');
 var auth = require('hapi-auth-cookie');
+var bcrypt = require('bcrypt');
 
 var server = new hapi.Server();
 server.connection({
