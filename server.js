@@ -31,7 +31,7 @@ server.register([inert, auth], function(err){
   cookie: 'angular-scaffold-cookie',
   redirectTo: '/',
   ttl: 24 * 60 * 60 * 1000, // Set session to 1 day
-  isSecure: false
+  isSecure: true
   });
 	server.route(routes.endpoints);
 
