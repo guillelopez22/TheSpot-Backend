@@ -595,16 +595,16 @@ exports.endpoints = [
 	{
 		method: 'POST',
 		path: '/register',
-		config: usersController.createUser
+		config: usuariosController.createUser
 	},
 	{method: 'POST',
 	 path: '/login',
-	 config: authController.login
+	 config: authenticationController.login
  },
 	{
 		method: 'GET',
 		path: '/logout',
-		config: authController.logout
+		config: authenticationController.logout
 	}
 
 ];
