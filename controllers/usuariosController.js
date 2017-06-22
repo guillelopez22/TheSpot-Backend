@@ -133,11 +133,6 @@ exports.deleteUsuario = {
   }
 }
 exports.createUsuario = {
-  auth: {
-    mode:'required',
-    strategy:'session',
-    scope: ['admin', 'gerente']
-  },
   handler: function(request, reply){
     var newUsuario = new usuario({
       IdPersonal : request.payload.IdPersonal,
