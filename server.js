@@ -29,7 +29,7 @@ server.register([inert, auth], function(err){
   server.auth.strategy('session', 'cookie', {
   password: 'secretpasswordforencryption',
   cookie: 'angular-scaffold-cookie',
-  redirectTo: '/ordenes',
+  redirectTo: '/',
   ttl: 24 * 60 * 60 * 1000, // Set session to 1 day
   isSecure: false
   });
