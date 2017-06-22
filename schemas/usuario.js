@@ -9,7 +9,7 @@ var UsuarioSchema = new mongoose.Schema({
   contrasena : String,
   nombre : String,
   telefono : String,
-  scope: [String]
+  scope: String
 });
 
 UsuarioSchema.plugin(uniqueValidator);
