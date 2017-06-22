@@ -12,5 +12,5 @@ var UsuarioSchema = new mongoose.Schema({
   scope: [String]
 });
 
-UserSchema.plugin(uniqueValidator);
+UsuarioSchema.plugin(uniqueValidator);
 module.exports = mongoose.model('usuario', UsuarioSchema);

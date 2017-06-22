@@ -133,7 +133,7 @@ exports.createProd_elaborado_detail = {
   auth: {
     mode:'required',
     strategy:'session',
-    scope: ['admin'. 'gerente']
+    scope: ['admin', 'gerente']
   },
   handler: function(request, reply){
     var newProducto_elaborado_detail = new producto_elaborado_detail({

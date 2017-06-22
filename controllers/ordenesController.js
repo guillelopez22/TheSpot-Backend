@@ -34,7 +34,7 @@ exports.getOrdenesName = {
   auth: {
     mode:'required',
     strategy:'session',
-    scope: ['admin', 'gerente', 'personal' 'cliente']
+    scope: ['admin', 'gerente', 'personal', 'cliente']
   },
   handler : function(request, reply){
     orden.find({'nombre' : request.params.nombre}, function(err, Ordenes){
