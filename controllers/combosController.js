@@ -2,22 +2,12 @@ var combo = require('../schemas/combo.js');
 var mongoose = require('mongoose');
 
 exports.getCombos = {
-  auth: {
-    mode:'required',
-    strategy:'session',
-    scope: ['admin', 'gerente', 'personal', 'cliente']
-  },
   handler: function(request, reply){
     var combos = combo.find({});
     reply(combos);
   }
 }
 exports.getComboId = {
-  auth: {
-    mode:'required',
-    strategy:'session',
-    scope: ['admin', 'gerente', 'personal', 'cliente']
-  },
   handler : function(request, reply){
     combo.findOne({'_id' : request.params._id}, function(err, Combo){
       if(!err && Combo){
